@@ -678,7 +678,7 @@ class ThemeDecoder {
       if (radius != null) {
         result = BorderRadius.circular(radius);
       } else {
-        assert(value == null || value['type'] is String);
+        assert(value == null || value['type'] is String?);
         _checkSupported(
           'BorderRadius',
           [
@@ -3976,7 +3976,7 @@ class ThemeDecoder {
     if (value is Gradient) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'Gradient',
         [
@@ -4308,7 +4308,7 @@ class ThemeDecoder {
     if (value is ImageProvider) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'ImageProvider.type',
         [
@@ -4437,7 +4437,7 @@ class ThemeDecoder {
     if (value is InputBorder) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'InputBorder.type',
         [
@@ -6294,7 +6294,7 @@ class ThemeDecoder {
     if (value is MouseCursor) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'MouseCursor.type',
         [
@@ -6317,7 +6317,7 @@ class ThemeDecoder {
             result = MouseCursor.defer;
             break;
           case 'material':
-            assert(value['cursor'] is String);
+            assert(value['cursor'] is String?);
             _checkSupported(
               'MouseCursor.cursor',
               [
@@ -6337,7 +6337,7 @@ class ThemeDecoder {
             }
             break;
           case 'system':
-            assert(value['cursor'] is String);
+            assert(value['cursor'] is String?);
             _checkSupported(
               'MouseCursor.cursor',
               [
@@ -6938,7 +6938,7 @@ class ThemeDecoder {
     if (value is OutlinedBorder) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'OutlinedBorder.type',
         [
@@ -7418,7 +7418,7 @@ class ThemeDecoder {
       if (radius != null) {
         result = Radius.circular(radius);
       } else {
-        assert(value == null || value['type'] is String);
+        assert(value == null || value['type'] is String?);
         _checkSupported(
           'Radius.type',
           [
@@ -7484,7 +7484,7 @@ class ThemeDecoder {
     if (value is RangeSliderThumbShape) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'RangeSliderThumbShape.type',
         [
@@ -7546,7 +7546,7 @@ class ThemeDecoder {
     if (value is RangeSliderTickMarkShape) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'RangeSliderTickMarkShape.type',
         [
@@ -7756,7 +7756,7 @@ class ThemeDecoder {
     if (value is Rect) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'Rect.type',
         [
@@ -7897,7 +7897,7 @@ class ThemeDecoder {
     if (value is ScrollPhysics) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'ScrollPhysics.type',
         [
@@ -8270,7 +8270,7 @@ class ThemeDecoder {
     if (value is ShapeBorder) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'ShapeBorder.type',
         [
@@ -8713,7 +8713,7 @@ class ThemeDecoder {
     if (value is SliderTrackShape) {
       result = value;
     } else {
-      assert(value == null || value['type'] is String);
+      assert(value == null || value['type'] is String?);
       _checkSupported(
         'type',
         [
